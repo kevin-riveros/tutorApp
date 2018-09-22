@@ -21,6 +21,7 @@ class MainActivity : AppCompatActivity() {
             R.id.navigation_notifications -> {
                 message.setText(R.string.title_profile)
                 return@OnNavigationItemSelectedListener true
+
             }
         }
         false
