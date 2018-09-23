@@ -12,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
         <ImageView
-
+            android:contentDescription="@string/image_profile"
             android:id="@+id/imageView"
             android:layout_width="180dp"
             android:layout_height="180dp"
@@ -67,8 +67,9 @@
 
             />
 
-        <android.support.design.button.MaterialButton
-            android:layout_width="160dp"
+        <Button
+            android:id="@+id/editProfileButton"
+            android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:text="Edit"
             android:layout_margin="@dimen/default_margin"

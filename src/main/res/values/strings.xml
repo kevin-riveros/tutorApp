@@ -6,4 +6,8 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="image_profile">imageProfile</string>
+    <string name="feed_title">Feed</string>
+    <string name="tutors_title">Tutors</string>
+    <string name="profile_title">Profile</string>
 </resources>
