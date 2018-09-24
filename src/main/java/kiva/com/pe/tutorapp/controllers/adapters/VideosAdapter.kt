@@ -34,7 +34,7 @@ class VideosAdapter(var media: ArrayList<Media>,  val context:Context):RecyclerV
 
         fun updateFrom(media: Media) {
 
-
+            titleTextView.text = media.created_at
             with(pictureImageView) {
                 setDefaultImageResId(R.mipmap.ic_launcher)
                 setErrorImageResId(R.mipmap.ic_launcher)
