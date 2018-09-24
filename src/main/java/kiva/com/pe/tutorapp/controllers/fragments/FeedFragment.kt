@@ -34,7 +34,10 @@ class FeedFragment : Fragment() {
                               savedInstanceState: Bundle?): View? {
         // Inflate the layout for this fragment
         val video1 =Media(1,1,"Programacion 1 ","https://www.youtube.com/watch?v=0vTopF6wwZg",1)
+        val video2 =Media(1,1,"Programacion 2 ","https://www.youtube.com/watch?v=0vTopF6wwZg",1)
         media.add(video1)
+        media.add(video2)
+
         val view = inflater.inflate(R.layout.fragment_feed, container, false)
         mediaAdapter = VideosAdapter(media, view.context)
         mediaLayoutManager = GridLayoutManager(view.context, 1) as RecyclerView.LayoutManager

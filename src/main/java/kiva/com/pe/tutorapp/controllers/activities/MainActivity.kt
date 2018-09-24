@@ -25,6 +25,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         supportActionBar?.title = "Feed"
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener)
+        navigation.selectedItemId = R.id.navigation_home
 
         val UserLogged = SettingsAccount(this)
 
