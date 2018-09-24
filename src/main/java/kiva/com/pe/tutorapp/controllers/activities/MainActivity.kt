@@ -1,10 +1,13 @@
 package kiva.com.pe.tutorapp.controllers.activities
 
+import android.content.Intent
 import android.os.Bundle
 import android.support.design.widget.BottomNavigationView
 import android.support.v4.app.Fragment
 import android.support.v7.app.AppCompatActivity
 import android.view.MenuItem
+import android.widget.Toast
+import kiva.com.pe.tutorapp.controllers.models.*
 import kiva.com.pe.tutorapp.R
 import kiva.com.pe.tutorapp.controllers.fragments.FeedFragment
 import kiva.com.pe.tutorapp.controllers.fragments.ProfileFragment
@@ -22,6 +25,22 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         supportActionBar?.title = "Feed"
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener)
+
+        val UserLogged = SettingsAccount(this)
+
+        if (!UserLogged.didUserLoggedIn){
+            Toast.makeText(this,"openlogin", Toast.LENGTH_SHORT).show()
+            startActivity(Intent(this,LoginActivity::class.java))
+
+
+        }
+        else{
+
+            Toast.makeText(this,"false", Toast.LENGTH_SHORT).show()
+
+        }
+
+
     }
 
     private fun fragmentFor(item: MenuItem):Fragment {

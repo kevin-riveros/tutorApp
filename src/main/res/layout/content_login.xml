@@ -21,25 +21,25 @@
         app:layout_constraintStart_toStartOf="parent"
 
         app:layout_constraintTop_toTopOf="parent" />
-    <EditText
+    <android.support.design.widget.TextInputEditText
+
         android:id="@+id/emailEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textEmailAddress"
+        android:textColorHint="@color/colorIcons"
+
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="200dp"
+        app:layout_constraintTop_toBottomOf="@id/logoImageView"
+        android:layout_marginTop="8dp"
         android:layout_marginStart="32dp"
         android:layout_marginEnd="32dp"
         android:layout_marginBottom="8dp"
-        android:background="@drawable/edittext_style"
-        android:hint="email"
-        />
+        android:hint="email" />
 
-    <EditText
-        android:background="@drawable/edittext_style"
+    <android.support.design.widget.TextInputEditText
         android:id="@+id/passwordEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -48,10 +48,13 @@
         android:layout_marginStart="32dp"
         android:layout_marginEnd="32dp"
         android:layout_marginTop="@dimen/default_margin"
-        android:layout_marginBottom="8dp"        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/emailEditText"
         android:hint="password"
+        android:textColorHint="@color/colorIcons"
+
 
         />
 
@@ -69,6 +72,16 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         android:background="@color/colorPrimary"
+        />
+
+    <ImageView
+        android:id="@+id/logoImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/logo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         />
 
 
