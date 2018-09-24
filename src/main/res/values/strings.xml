@@ -10,4 +10,5 @@
     <string name="feed_title">Feed</string>
     <string name="tutors_title">Tutors</string>
     <string name="profile_title">Profile</string>
+    <string name="title_activity_login">Login</string>
 </resources>
