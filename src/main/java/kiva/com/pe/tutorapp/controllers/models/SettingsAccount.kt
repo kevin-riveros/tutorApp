@@ -16,10 +16,9 @@ class SettingsAccount(val context: Context){
 
     set(value) = preferences.edit().putBoolean(SettingsAccount.didUserLoggedIn,value).apply()
 
-    var shouldUserLoggedIn: Boolean = !didUserLoggedIn
+    var shouldUserLoggedIn  :Boolean = !didUserLoggedIn
 
     set(value) {
-
         shouldUserLoggedIn = !value
     }
 
