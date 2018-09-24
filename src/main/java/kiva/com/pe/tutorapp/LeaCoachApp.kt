@@ -7,5 +7,6 @@ class LeaCoachApp: Application(){
     override fun onCreate() {
         super.onCreate()
         AndroidNetworking.initialize(getApplicationContext())
+
     }
 }
