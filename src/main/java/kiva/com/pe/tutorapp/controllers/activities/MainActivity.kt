@@ -7,7 +7,7 @@ import android.support.v4.app.Fragment
 import android.support.v7.app.AppCompatActivity
 import android.view.MenuItem
 import android.widget.Toast
-import kiva.com.pe.tutorapp.controllers.models.*
+import kiva.com.pe.tutorapp.models.*
 import kiva.com.pe.tutorapp.R
 import kiva.com.pe.tutorapp.controllers.fragments.FeedFragment
 import kiva.com.pe.tutorapp.controllers.fragments.ProfileFragment

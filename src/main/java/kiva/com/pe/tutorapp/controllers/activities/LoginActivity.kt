@@ -1,12 +1,11 @@
 package kiva.com.pe.tutorapp.controllers.activities
 
-import android.content.Intent
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.widget.Button
 import android.widget.Toast
 import kiva.com.pe.tutorapp.R
-import kiva.com.pe.tutorapp.controllers.models.SettingsAccount
+import kiva.com.pe.tutorapp.models.SettingsAccount
 
 class LoginActivity : AppCompatActivity() {
 

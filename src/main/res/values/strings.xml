@@ -11,4 +11,5 @@
     <string name="tutors_title">Tutors</string>
     <string name="profile_title">Profile</string>
     <string name="title_activity_login">Login</string>
+    <string name="title_activity_media">About Media</string>
 </resources>
